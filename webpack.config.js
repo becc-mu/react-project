@@ -7,7 +7,7 @@ const config = {
   module: {
     rules: [
       {
-        test: /\.js$/,
+        test: /\.js$/, 
         loaders: [
           'babel-loader',
         ],
@@ -15,6 +15,7 @@ const config = {
       },
     ],
   },
+  
 };
 
 module.exports = config;
