@@ -1,0 +1,21 @@
+{
+  "name": "simple-react-project",
+  "version": "1.0.0",
+  "description": "A practice React Project to create and setup development environment for React.",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server index.js"
+  },
+  "author": "Rebecca Mulugeta",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0"
+  },
+  "devDependencies": {
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.9.0"
+  }
+}
