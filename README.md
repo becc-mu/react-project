@@ -51,4 +51,17 @@ To terminate type `ctrl + c`
 Install Babel Core as the engine that is going to run the transpiler and the plugins specific for React JSX:
 Type `yarn add -D @babel/core @babel/preset-react`
 
-To create this project I followed tutorials from this page: <https://codeburst.io/yet-another-beginners-guide-to-setting-up-a-react-project-part-1-bdc8a29aea22>
+## Add Config files
+
+Create webpcak configuration file `webpack.config.js` and add rules so that it checks each file extension is `.js`, runs `babel-loader` etc. After creating the file and adding the necessary configurations, type: `yarn add -D babel-loader@8.0.0-beta.0`
+
+Create Babel configurations file `.babelrc` to run command that specifies for Babel to use react-presets for transformations.
+Type:
+
+```{
+  "presets": ["@babel/preset-react"]
+}```
+
+To view the result `yarn start` and you should be able to see "Hello World with JSX, Babel and Webapck"
+
+To create this App I followed tutorials on codeburst.io: <https://codeburst.io/yet-another-beginners-guide-to-setting-up-a-react-project-part-1-bdc8a29aea22>
